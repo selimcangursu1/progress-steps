@@ -1,0 +1,162 @@
+html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress-step {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .step {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: linear-gradient(#0b6824, #270d7c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+  }
+
+  .step-area {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress {
+    width: 60%;
+    height: 10px;
+    top: 25px;
+    left: 240px;
+    background-color: black;
+    position: absolute;
+    transition: width 2s ease;
+  }
+
+  .progress-next {
+    min-width: 0%;
+    height: 10px;
+    top: 25px;
+    left: 240px;
+    background-color: orange;
+    position: absolute;
+    transition: width 2s ease;
+  }
+
+  .previous-button {
+    height: 30px;
+    background: linear-gradient(#0b6824, #270d7c);
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .button-area {
+    margin-top: 25px;
+  }
+
+  .next-button {
+    height: 30px;
+    background: linear-gradient(#0b6824, #270d7c);
+    color: whitesmoke;
+    border: none;
+    border-radius: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  @media only screen and (max-width:1000px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .step {
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: linear-gradient(#0b6824, #270d7c);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        z-index: 1;
+      }
+    
+    .progress-step {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+  
+
+      .step-description{
+        display: none;
+      }
+
+      .progress {
+        width: 2%;
+        height: 80%;
+        top: 25px;
+        left: 183px;
+        background-color: black;
+        position: absolute;
+        transition: height 2s ease;
+      }
+
+      
+        .progress-next {
+          width: 2%;
+          height: 0%;
+          top: 25px;
+          left: 183px;
+          background-color: orange;
+          position: absolute;
+          transition: height 2s ease;
+         }
+
+         .step-title{
+          z-index: -1;
+         }
+
+         .order-title{
+          text-align: center;
+         }
+  }

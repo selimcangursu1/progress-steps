@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js"></script>
+    <title>Progress Steps</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sipariş Adımları</h2>
+      <div class="progress-step">
+        <div class="step-area">
+          <div class="step">
+            <div class="step-content">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <span class="step-title">Sipariş Alındı</span>
+          <span class="step-description" style="font-size: 11px;text-align: center;">Yeni Bir Sipariş Var ! Gelen Siparişi Kontrol Edip Siparişi Onaylayıp Bir Sonraki Adıma Geçebilirsiniz.</span>
+        </div>
+        <div class="step-area">
+          <div class="step">
+            <div class="step-content">
+              <i class="fa-solid fa-check"></i>
+            </div>
+          </div>
+          <span class="step-title">Sipariş Onaylandı</span>
+          <span class="step-description" style="font-size: 11px;text-align: center;">Siparişiniz İçin İlgili Ürünün Stokta Olup Olmadığını Kontrol Edin.Herhangi Bir Problem Yoksa Ürünü Kargolayınız</span>
+        </div>
+        <div class="step-area">
+          <div class="step">
+            <div class="step-content">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+          </div>
+          <span class="step-title">Sipariş Kargolandı</span>
+          <span class="step-description" style="font-size: 11px;text-align: center;">Siparişin Paketi Hazırlanmış , Kargoya Teslim Edilmitir Ortalama 1- 3 İş Günü İçerisinde Ürün Alıcıya Ulaşacaktır. </span>
+        </div>
+        <div class="step-area">
+          <div class="step">
+            <div class="step-content">
+              <i class="fa-solid fa-thumbs-up"></i>
+            </div>
+          </div>
+          <span class="step-title">Teslimat Gerçekleşti</span>
+          <span class="step-description" style="font-size: 11px;text-align: center;">Ürün Alıcıya Ulaştırıldı , Alıcı Tarafından Sorun Olmadığına Dair Teslimat Onaylandı Kayıt Kapandı.</span>
+        </div>
+        <div class="progress"></div>
+        <div class="progress-next"></div>
+      </div>
+      <div class="button-area">
+        <button class="previous-button">Geri Dön</button>
+        <button class="next-button">Siparişi Onayla</button>
+      </div>
+      <h4 class="order-title" style="display: none;"><i class="fa-solid fa-right-long"></i> İşlemler Tamamlanmıştır , Sipariş Kargoya Teslim Edilmiştir ...</h4>
+    </div>
+  </body>
+
+</html>
